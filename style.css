@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    backdrop-filter: blur(5px);
+}
+
+h1 {
+    font-family: Roboto, sans-serif;
+    font-size: 40px;
+    color: #d17114;
+}
+
+.weather-list {
+    display: flex;
+    gap: 24px;
+}
+
+.weather-list_item {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    border: 1px solid #DDDDDD;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.weather-list_item_icon {
+    width: 36px;
+    height: 36px;
+}
+
+.weather-list_item__sun {
+    background-image: url("assets/summer-bg.jpg");
+}
+
+.weather-list_item__rain {
+    background-image: url("assets/rainy-bg.jpg");
+}
+
+.weather-list_item__snow {
+    background-image: url("assets/winter-bg.jpg");
+}
+
+.volume {
+    margin-top: 24px;
+    cursor: pointer;
+}
